@@ -22,20 +22,16 @@ public class RestaurantsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place(getString(R.string.restaurant_1), getString(R.string.restaurant_address_1), R.drawable.rest_1));
-        places.add(new Place(getString(R.string.restaurant_2), getString(R.string.restaurant_address_2), R.drawable.rest_2));
-        places.add(new Place(getString(R.string.restaurant_3), getString(R.string.restaurant_address_3), R.drawable.rest_3));
-        places.add(new Place(getString(R.string.restaurant_4), getString(R.string.restaurant_address_4), R.drawable.rest_4));
-        places.add(new Place(getString(R.string.restaurant_5), getString(R.string.restaurant_address_5), R.drawable.rest_5));
-        places.add(new Place(getString(R.string.restaurant_6), getString(R.string.restaurant_address_6), R.drawable.rest_6));
-        places.add(new Place(getString(R.string.restaurant_7), getString(R.string.restaurant_address_7), R.drawable.rest_7));
-        places.add(new Place(getString(R.string.restaurant_8), getString(R.string.restaurant_address_8), R.drawable.rest_8));
-        places.add(new Place(getString(R.string.restaurant_9), getString(R.string.restaurant_address_9), R.drawable.rest_9));
-        places.add(new Place(getString(R.string.restaurant_10), getString(R.string.restaurant_address_10), R.drawable.rest_10));
+        places.add(new Place(getString(R.string.Eostrix_Gastro_Pub), getString(R.string.Eostrix_Gastro_Pub_address), R.drawable.eostrix_gastro_pub_image));
+        places.add(new Place(getString(R.string.Caprice), getString(R.string.Caprice_address), R.drawable.caprice_image));
+        places.add(new Place(getString(R.string.Nur_Lebanese_Dining), getString(R.string.Nur_Lebanese_Dining_address), R.drawable.nur_lebanese_dining_image));
+        places.add(new Place(getString(R.string.Salt), getString(R.string.Salt_address), R.drawable.salt_image));
+        places.add(new Place(getString(R.string.Nasim), getString(R.string.Nasim_address), R.drawable.nasim_image));
+        places.add(new Place(getString(R.string.Tamara), getString(R.string.Tamara_address), R.drawable.tamara_image));
 
         PlacesAdapter adapter = new PlacesAdapter(getActivity(), places, R.color.category_restaurants);
 
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
 
         listView.setAdapter(adapter);
 

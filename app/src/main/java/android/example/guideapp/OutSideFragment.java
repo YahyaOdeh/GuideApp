@@ -22,20 +22,16 @@ public class OutSideFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
         final ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place(getString(R.string.out_side_1), getString(R.string.out_side_address_1)));
-        places.add(new Place(getString(R.string.out_side_2), getString(R.string.out_side_address_2)));
-        places.add(new Place(getString(R.string.out_side_3), getString(R.string.out_side_address_3)));
-        places.add(new Place(getString(R.string.out_side_4), getString(R.string.out_side_address_4)));
-        places.add(new Place(getString(R.string.out_side_5), getString(R.string.out_side_address_5)));
-        places.add(new Place(getString(R.string.out_side_6), getString(R.string.out_side_address_6)));
-        places.add(new Place(getString(R.string.out_side_7), getString(R.string.out_side_address_7)));
-        places.add(new Place(getString(R.string.out_side_8), getString(R.string.out_side_address_8)));
-        places.add(new Place(getString(R.string.out_side_9), getString(R.string.out_side_address_9)));
-        places.add(new Place(getString(R.string.out_side_10), getString(R.string.out_side_address_10)));
+        places.add(new Place(getString(R.string.Climbat_Amman), getString(R.string.Climbat_Amman_address)));
+        places.add(new Place(getString(R.string.Amman_Citadel), getString(R.string.Amman_Citadel_address)));
+        places.add(new Place(getString(R.string.Temple_of_Hercules), getString(R.string.Temple_of_Hercules_address)));
+        places.add(new Place(getString(R.string.The_Forest_Park), getString(R.string.The_Forest_Park_address)));
+        places.add(new Place(getString(R.string.The_Hashemite_Plaza), getString(R.string.The_Hashemite_Plaza_address)));
+        places.add(new Place(getString(R.string.The_Royal_Autimobile_Museum), getString(R.string.The_Royal_Autimobile_Museum_address)));
 
         PlacesAdapter adapter = new PlacesAdapter(getActivity(), places, R.color.category_out_side);
 
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
 
         listView.setAdapter(adapter);
 

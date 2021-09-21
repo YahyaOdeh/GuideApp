@@ -22,20 +22,20 @@ public class HospitalsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place(getString(R.string.hospital_1), getString(R.string.hospital_address_1)));
-        places.add(new Place(getString(R.string.hospital_2), getString(R.string.hospital_address_2)));
-        places.add(new Place(getString(R.string.hospital_3), getString(R.string.hospital_address_3)));
-        places.add(new Place(getString(R.string.hospital_4), getString(R.string.hospital_address_4)));
-        places.add(new Place(getString(R.string.hospital_5), getString(R.string.hospital_address_5)));
-        places.add(new Place(getString(R.string.hospital_6), getString(R.string.hospital_address_6)));
-        places.add(new Place(getString(R.string.hospital_7), getString(R.string.hospital_address_7)));
-        places.add(new Place(getString(R.string.hospital_8), getString(R.string.hospital_address_8)));
-        places.add(new Place(getString(R.string.hospital_9), getString(R.string.hospital_address_9)));
-        places.add(new Place(getString(R.string.hospital_10), getString(R.string.hospital_address_10)));
+        places.add(new Place(getString(R.string.Jordan_hospital), getString(R.string.Jordan_hospital_address)));
+        places.add(new Place(getString(R.string.Istishari_hospital), getString(R.string.Istishari_hospital_address)));
+        places.add(new Place(getString(R.string.Ibn_Al_Haytham_hospital), getString(R.string.Ibn_Al_Haytham_hospital_address)));
+        places.add(new Place(getString(R.string.Al_Rashid_hospital), getString(R.string.Al_Rashid_hospital_address)));
+        places.add(new Place(getString(R.string.King_Hussain_Cancer_hospital), getString(R.string.King_Hussain_Cancer_hospital_address)));
+        places.add(new Place(getString(R.string.Al_Khalidi_hospital), getString(R.string.Al_Khalidi_hospital_address)));
+        places.add(new Place(getString(R.string.Istiklal_hospital), getString(R.string.Istiklal_hospital_address)));
+        places.add(new Place(getString(R.string.Islamic_General_hospital), getString(R.string.Istishari_hospital_address)));
+        places.add(new Place(getString(R.string.Al_Maqased_hospital), getString(R.string.Al_Maqased_hospital_address)));
+        places.add(new Place(getString(R.string.Al_Esraa_hospital), getString(R.string.Al_Esraa_hospital_address)));
 
         PlacesAdapter adapter = new PlacesAdapter(getActivity(), places, R.color.category_hospitals);
 
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
 
         listView.setAdapter(adapter);
 

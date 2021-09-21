@@ -10,6 +10,8 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
+    private int fragmentsP;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +25,9 @@ public class MainActivity extends AppCompatActivity {
         schoolBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                fragmentsP = 0;
                 Intent i = new Intent(view.getContext(), FragmentsActivity.class);
+                i.putExtra("Fragment", fragmentsP);
                 startActivity(i);
                 finish();
             }
@@ -32,7 +36,9 @@ public class MainActivity extends AppCompatActivity {
         hospitalBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                fragmentsP = 1;
                 Intent i = new Intent(view.getContext(), FragmentsActivity.class);
+                i.putExtra("Fragment", fragmentsP);
                 startActivity(i);
                 finish();
             }
@@ -41,7 +47,9 @@ public class MainActivity extends AppCompatActivity {
         restaurantsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                fragmentsP = 2;
                 Intent i = new Intent(view.getContext(), FragmentsActivity.class);
+                i.putExtra("Fragment", fragmentsP);
                 startActivity(i);
                 finish();
             }
@@ -50,7 +58,9 @@ public class MainActivity extends AppCompatActivity {
         outSideBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                fragmentsP = 3;
                 Intent i = new Intent(view.getContext(), FragmentsActivity.class);
+                i.putExtra("Fragment", fragmentsP);
                 startActivity(i);
                 finish();
             }

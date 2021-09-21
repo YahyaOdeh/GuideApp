@@ -22,20 +22,20 @@ public class SchoolsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place(getString(R.string.school_1), getString(R.string.school_address_1)));
-        places.add(new Place(getString(R.string.school_2), getString(R.string.school_address_2)));
-        places.add(new Place(getString(R.string.school_3), getString(R.string.school_address_3)));
-        places.add(new Place(getString(R.string.school_4), getString(R.string.school_address_4)));
-        places.add(new Place(getString(R.string.school_5), getString(R.string.school_address_5)));
-        places.add(new Place(getString(R.string.school_6), getString(R.string.school_address_6)));
-        places.add(new Place(getString(R.string.school_7), getString(R.string.school_address_7)));
-        places.add(new Place(getString(R.string.school_8), getString(R.string.school_address_8)));
-        places.add(new Place(getString(R.string.school_9), getString(R.string.school_address_9)));
-        places.add(new Place(getString(R.string.school_10), getString(R.string.school_address_10)));
+        places.add(new Place(getString(R.string.Al_Saadah_Collage_school), getString(R.string.Al_Saadah_Collage_school_address)));
+        places.add(new Place(getString(R.string.Ahliyyah_Mutran_school), getString(R.string.Ahliyyah_Mutran_school_address)));
+        places.add(new Place(getString(R.string.Oxford_school), getString(R.string.Oxford_school_address)));
+        places.add(new Place(getString(R.string.The_International_Academy_school), getString(R.string.The_International_Academy_school_address)));
+        places.add(new Place(getString(R.string.School_of_Choueifat), getString(R.string.School_of_Choueifat_address)));
+        places.add(new Place(getString(R.string.Al_Asriyya_school), getString(R.string.Al_Asriyya_school_address)));
+        places.add(new Place(getString(R.string.Amman_Academy_school), getString(R.string.Amman_Academy_school_address)));
+        places.add(new Place(getString(R.string.International_Independent_school), getString(R.string.International_Independent_school_address)));
+        places.add(new Place(getString(R.string.International_Leaders_school), getString(R.string.International_Leaders_school_address)));
+        places.add(new Place(getString(R.string.Islamic_Educational_school), getString(R.string.Islamic_Educational_school_address)));
 
         PlacesAdapter adapter = new PlacesAdapter(getActivity(), places, R.color.category_school);
 
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
 
         listView.setAdapter(adapter);
 
